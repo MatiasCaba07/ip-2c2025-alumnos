@@ -17,12 +17,14 @@ def init(vals):
     fase = "buscar"
 
 def step():
-    # TODO:
+    global items, n, i, j, min_idx, fase #lo hice yo aaaa
+    if fase == "buscar": # ete tambien
+    
+    # TODO:    
     # - Fase "buscar": comparar j con min_idx, actualizar min_idx, avanzar j.
     #   Devolver {"a": min_idx, "b": j_actual, "swap": False, "done": False}.
     #   Al terminar el barrido, pasar a fase "swap".
     # - Fase "swap": si min_idx != i, hacer ese único swap y devolverlo.
     #   Luego avanzar i, reiniciar j=i+1 y min_idx=i, volver a "buscar".
-    #   messiiiii
     # Cuando i llegue al final, devolvé {"done": True}.
     return {"done": True}
